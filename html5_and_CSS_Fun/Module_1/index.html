@@ -1,13 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>The mighty index page</title>
 </head>
 <body>
-<p>Hello there!</p>
-<h1>A big hello header!</h1>
-<h3>A smaller hello header...</h3>
+  <header><h1>Hello there!</h1>
+    <ol>Table of contents:
+      <li><a href="Hello.html">Who is William?</a></li>
+      <li><a href="recipe_module1.html">Secret Recipe</a></li>
+      <li><a href="daily_routine.html">Daily Routine</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ol>
+  </header>
+
+
+<main>
+<!--    Our introduction is within an article element because this content can make sense on its own-->
+  <article>
+
+      <header id="intro">
+        <h2>Introduction to Death Metal</h2>
+      </header>
+
+      <p>William is a Swedish dude, hooked on Death Metal in all it's glorious forms. He also loves black metal, thrash metal, heavy metal and many more smaller subgenres, but the riff-centered, <em>old school death metal</em> takes the proverbial cake!</p>
+
+  
+
+      <aside><h4>OSDM</h4>
+        <p>OSDM stands for Old School Death Metal. </p>
+        <p>OSDM has always had a strong scene in the USA, but was further developed in Europe, specifically in Sweden, the UK, the Netherlands, and Germany. Swedish Old School Death Metal (specifically the bands originating from around the Stockholm scene) is known for it's heavy use of the BOSS HM2 pedal guitar effect pedal.</p>
+        <h5>Some Noteable OSDM bands:</h5>
+          <ul>
+            <li>Death (USA)</li>
+            <li>Possessed (USA)</li>
+            <li>Cannibal Corpse (USA)</li>
+            <li>Obituary (USA)</li>
+            <li>Deicide (USA)</li>
+            <li>Bolt Thrower (UK)</li>
+            <li>Entombed (SWE)</li>
+            <li>Dismember (SWE)</li>
+            <li>Asphyx (NL)</li>
+            <li>Grave (SWE)</li>
+            <li>Unleashed (SWE)</li>
+            <li>Hypocrisy (SWE)</li>
+            <li>Vital Remains (USA)</li>
+            <li>Suffocation (USA)</li>
+            <li>Autopsy (USA)</li>
+            <li>Cryptopsy (CAN)</li>
+          </ul>
+
+      </aside>
+  </article>
+
+<!--    Our history section-->
+<section>
+
+  <header id="history">
+    <h2>History</h2>
+</header>
+
+The first death metal bands are usually credited as <em>DEATH</em> from Florida, and <em>POSSESSED</em> from San Francisco (who released a demo called <a href="https://www.metal-archives.com/albums/Possessed/Death_Metal/21654" target="_blank">"Death Metal"</a> in 1984). Both started in the early 80's as a progression of the faster and darker thrash metal bands of the time (bands such as Slayer, Metallica, and Venom - to name a few).
+
+
+</section>
+       
+<!--    Our features section with smaller headings-->
+<section>
+            
+  <header id="features">
+      <h2>Features</h2>
+      <h4>What the <em>HECK</em> is death metal all about?</h4>
+  </header>
+
+  <p>Death Metal is defined by it's down tuned string intstruments; usually one or two guitars and a bass guitar, as well as growl vocals and high intensity drumming.</p>
+  
+</section>
+
+<!--    Our logo section show hows to use the semantic elements figure and figcaption-->
+<section>
+  
+  <header id="logo">
+      <h2>Death Metal Logotypes</h2>
+  </header>
+  
+  <figure>
+      <img src="https://www.metal-archives.com/images/1/4/8/148_logo.jpg?2113" alt="Deicide Logo" width="889" height="481" title="Logo of the death metal band Deicide">
+      <figcaption>Death Metal band logos usually look very spiky and are sometimes hard to read for commonfolk. The logo itself usually says something about the subgenre of metal that the band ascribes itself to, and can be interpreted by someone who is knowledgeable in the scene.</figcaption>
+  </figure>
+  
+</section>
+
+<!--Our references section concludes the main content of this page-->
+<section>
+  
+  <header id="ref">
+      <h2>References</h2>
+  </header>
+  
+  <p>Contents of this sample have been adapted from the <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5 page on Wikipedia</a>
+  </p>
+  
+</section>
+
+</main>
+
+<!--Our global footer where you would typically specify copyright, author, contact info and a footer navigation bar-->
+<footer>
+  <p>Copyrights information...</p>
+<!--        We show our authors and contact details using the details and summary elements. Expand to show content. -->
+  <details>
+      <summary>Authors</summary>
+      <p>Author1</p>
+      <p>Author2</p>
+  </details>
+  <details>
+      <summary>Contact</summary>
+<!--            Using nav within summary element-->
+      <nav>
+<!--                Styling has been added to make nav menu in a horizontal row-->
+          <ul style="margin: 0; padding: 0; list-style-type: none;">
+              <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">email</a></li>
+              <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">twitter</a></li>
+              <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">facebook</a></li>
+              <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">GitHub</a></li>
+          </ul>
+      </nav>
+  </details>
+</footer>
+
+
 </body>
 </html>
